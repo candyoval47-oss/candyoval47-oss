@@ -1,1 +1,210 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pelatih Voli</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #081426;
+    color: white;
+}
+
+header {
+    background: #101f36;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff9d24;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #ff9d24;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background: linear-gradient(90deg,
+    rgba(8,20,38,.95), rgba(8,20,38,.5)),
+    url('https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=1400')
+    center/cover;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ff9d24;
+}
+
+.hero p {
+    max-width: 550px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #ff9d24;
+    color: #081426;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #142640;
+    padding: 30px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #1d3657;
+}
+
+.card h3 {
+    color: #ff9d24;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.7;
+    color: #ccc;
+}
+
+footer {
+    background: #050d19;
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">VOLLEY COACH</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#program">Program</a>
+        <a href="#profil">Profil</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h1>MENJADI<br>
+        <span>PELATIH VOLI</span><br>
+        PROFESIONAL</h1>
+
+        <p>
+        Membangun atlet berprestasi melalui latihan,
+        disiplin, kerja sama tim, dan semangat juang
+        untuk meraih kemenangan.
+        </p>
+
+        <a href="#program" class="btn">Lihat Program</a>
+    </div>
+</div>
+
+<section id="program">
+    <h2>PROGRAM LATIHAN</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Teknik Dasar</h3>
+            <p>Melatih passing, servis, smash,
+            blocking, dan teknik permainan voli.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fisik Atlet</h3>
+            <p>Meningkatkan kekuatan, kecepatan,
+            kelincahan, dan daya tahan tubuh.</p>
+        </div>
+
+        <div class="card">
+            <h3>Strategi Tim</h3>
+            <p>Membangun kekompakan dan strategi
+            untuk menghadapi pertandingan.</p>
+        </div>
+    </div>
+</section>
+
+<section id="profil">
+    <h2>FILOSOFI PELATIH</h2>
+    <p>
+    Disiplin dalam latihan, kompak dalam permainan,
+    dan pantang menyerah untuk meraih prestasi.
+    </p>
+</section>
+
+<footer>
+    © 2026 VOLLEY COACH | Website Pelatih Voli
+</footer>
+
+</body>
+</html>
